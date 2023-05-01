@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import {CardData} from '../../constants/CardData'
-import cn from 'classnames'
+import React, { useState } from "react";
+import { CardData } from "../../constants/CardData";
+import cn from "classnames";
 
 const CardProduct = () => {
-  const [show, setShow] = useState(false)
-  
+  const [show, setShow] = useState(false);
+
   return (
-    <div className="w-full items-center gap-4 flex flex-col sm:flex-wrap sm:flex-row p-4 md:justify-center ">
+    <div className="w-full items-center gap-4 flex flex-col sm:flex-wrap sm:flex-row p-4 md:justify-center bg-[#e5e7eb] py-[60px]">
       {CardData.map((card) => (
         <div
           className="w-5/6 sm:w-72 relative bg-white shadow-md sm:h-[500px] flex flex-col  "
@@ -46,7 +46,6 @@ const CardProduct = () => {
             >
               Подробнее
             </button>
-
             <button className="self-end ease-in-out duration-300 bg-slate-100 w-fit p-2 hover:bg-slate-300 cursor-pointer">
               В корзину
             </button>
@@ -55,6 +54,6 @@ const CardProduct = () => {
       ))}
     </div>
   );
-}
+};
 
-export default CardProduct
+export default CardProduct;

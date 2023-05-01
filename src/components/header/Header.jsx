@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Header.module.scss";
 import logo from "../../assets/logo.png";
 import search from "../../assets/searchImg.svg";
-import call from "../../assets/phoneImg.svg";
-import delivery from "../../assets/deliveryImg.svg";
+import call from "../../assets/phoneCallIcon.svg";
+import delivery from "../../assets/deliveryIcon.svg";
 
 function Header() {
   return (

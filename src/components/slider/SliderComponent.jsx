@@ -3,7 +3,7 @@ import styles from "./SliderComponent.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { slideProducts } from "../../objects/slideProducts";
+import { slideProducts } from "../../constants/slideProducts";
 import click from "../../assets/click.png";
 
 const SliderComponent = () => {
@@ -16,7 +16,7 @@ const SliderComponent = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     arrows: false,
