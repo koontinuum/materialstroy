@@ -12,8 +12,8 @@ function App() {
       <NavBar />
       <Header />
       <SliderComponent />
-      <CardProduct />
       <Category />
+      <CardProduct />
       <Footer />
     </div>
   );
