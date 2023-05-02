@@ -33,7 +33,7 @@
   .product {
     @apply relative w-full cursor-pointer;
     b {
-      @apply absolute px-2 py-1 top-8 left-8 bg-green-600 opacity-80 text-black text-xl rounded-[2px] w-[320px];
+      @apply absolute px-2 py-1 top-8 left-8 bg-green-600 opacity-80 text-[#2e2e2e] text-xl rounded-[2px];
     }
     img {
       @apply w-full h-[420px] rounded-md;
