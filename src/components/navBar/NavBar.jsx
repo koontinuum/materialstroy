@@ -1,12 +1,17 @@
 import React from "react";
 import styles from "./NavBar.module.scss";
+import { navIcons } from "../../constants/differentObjects";
 
 function NavBar() {
   return (
     <div>
       <div className="overflow-hidden bg-[#052e16]">
         <div className={styles.dropdown}>
-          <button className={styles.dropbtn}>Dropdown</button>
+          {navIcons.map((item) => (
+            <button className={styles.dropbtn}>
+              <img src={item.img} alt="navProduct" />
+            </button>
+          ))}
           <div className={styles.dropdown_content}>
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>

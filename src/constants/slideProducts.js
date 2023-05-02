@@ -11,7 +11,7 @@ import paintProduct from '../assets/slideProducts/dyeProduct.jpg'
 export const slideProducts = [
     {
         id: 1,
-        title: 'Широкий ассортимент строительных материалов',
+        title: 'Широкий ассортимент',
         img: materials
     }, {
         id: 2,
@@ -19,7 +19,7 @@ export const slideProducts = [
         img: mixtureProduct
     }, {
         id: 3,
-        title: 'Стеновые строительные материалы',
+        title: 'Стеновые материалы',
         img: wellProduct
     }, {
         id: 4,
