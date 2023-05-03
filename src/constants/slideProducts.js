@@ -4,7 +4,7 @@ import metalProduct from '../assets/slideProducts/metalProduct.jpeg'
 import electricProduct from '../assets/slideProducts/electricProduct.jpg'
 import insulationProduct from '../assets/slideProducts/insulationProduct.jpg'
 import foamProduct from '../assets/slideProducts/foamProduct.jpeg'
-import plumbingProduct from '../assets/slideProducts/plumbingProduct.webp'
+import plumbingProduct from '../assets/slideProducts/Сантехническая-инженирия.jpg'
 import materials from '../assets/slideProducts/materialsProduct.jpeg'
 import paintProduct from '../assets/slideProducts/dyeProduct.jpg'
 
