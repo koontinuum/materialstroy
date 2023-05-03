@@ -5,6 +5,7 @@ import CardProduct from './components/cardProduct/CardProduct'
 import Category from './components/category/Category';
 import Footer from './components/footer/Footer';
 import contacts from './assets/icons8-whatsapp.svg'
+import Cart from './components/cart/Cart';
 import MainCategory from './components/category/MainCategory';
 import Info from './components/info/Info';
 
@@ -23,6 +24,7 @@ function App() {
       <Category />
       <MainCategory />
       <CardProduct />
+      <Cart/>
       <Footer />
     </div>
   );

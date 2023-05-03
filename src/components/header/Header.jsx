@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import logo from "../../assets/logo.png";
-import search from "../../assets/searchImg.svg";
+
 import call from "../../assets/phoneCallIcon.svg";
 import delivery from "../../assets/deliveryIcon.svg";
+import Search from "../search/Search";
 
 function Header() {
   return (
@@ -13,10 +14,7 @@ function Header() {
         Качество и надежность <br /> это наша главная цель!
       </h1>
       <div className={styles.search_container}>
-        <input type="search" placeholder="Поиск продукции..." />
-        <button>
-          <img src={search} alt="" />
-        </button>
+        <Search/>
       </div>
       <div className={styles.header_info}>
         <img src={delivery} alt="" />

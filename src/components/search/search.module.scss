@@ -1,0 +1,36 @@
+.searchEngine {
+  width: 430px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #eeeeee;
+  padding: 0 0px 0 20px;
+
+  input {
+    width: 60px;
+    font-family: "Montserrat";
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+  button {
+    background: #ddd;
+    width: 60px;
+    height: 100%;
+    padding-top: 4px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .searchInp {
+    width: 100%;
+  }
+}
