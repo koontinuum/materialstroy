@@ -5,6 +5,7 @@ import CardProduct from './components/cardProduct/CardProduct'
 import Category from './components/category/Category';
 import Footer from './components/footer/Footer';
 import contacts from './assets/icons8-whatsapp.svg'
+import Cart from './components/cart/Cart';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <SliderComponent />
       <Category />
       <CardProduct />
+      <Cart/>
       <Footer />
     </div>
   );
