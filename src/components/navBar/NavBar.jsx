@@ -5,7 +5,7 @@ import { navIcons } from "../../constants/differentObjects";
 function NavBar() {
   return (
     <div>
-      <div className="overflow-hidden bg-[#052e16]">
+      <div className="overflow-hidden bg-[#ddd]">
         <div className={styles.dropdown}>
           {navIcons.map((item) => (
             <button className={styles.dropbtn}>
