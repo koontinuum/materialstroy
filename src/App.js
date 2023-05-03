@@ -6,6 +6,8 @@ import Category from './components/category/Category';
 import Footer from './components/footer/Footer';
 import contacts from './assets/icons8-whatsapp.svg'
 import Cart from './components/cart/Cart';
+import MainCategory from './components/category/MainCategory';
+import Info from './components/info/Info';
 
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
       {/* <NavBar /> */}
       <Header />
       <SliderComponent />
+      <Info />
       <Category />
+      <MainCategory />
       <CardProduct />
       <Cart/>
       <Footer />
