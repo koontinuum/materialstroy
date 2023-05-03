@@ -14,6 +14,39 @@ import img13 from '../assets/iconCardCategory/metal-product.jpg'
 import img14 from '../assets/iconCardCategory/myk.jpg'
 import img15 from '../assets/iconCardCategory/pilomaterial.jpg'
 
+export const mainCategory = [
+	{
+		id: 1,
+		img: img1,
+		title: "Стеновые и фасадные метериалы"
+	},
+	{
+		id: 2,
+		img: img2,
+		title: "Сухие строительные смеси"
+	},
+	{
+		id: 3,
+		img: img3,
+		title: "Лакокрасочные метериалы"
+	},
+	{
+		id: 4,
+		img: img4,
+		title: "Гидроизоляция"
+	},
+	{
+		id: 5,
+		img: img5,
+		title: "Теплоизоляция"
+	},
+	{
+		id: 6,
+		img: img6,
+		title: "Пены, Клеи, Герметики"
+	},
+]
+
 export const CategoryData = [
 	{
 		id: 1,
