@@ -16,7 +16,7 @@ const SliderComponent = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
     arrows: false,
@@ -57,7 +57,7 @@ const SliderComponent = () => {
       </button>
       <Slider ref={arrowRef} {...settings}>
         {slideProducts.map((item) => (
-          <div className={styles.card}>
+          <div key={item.id} className={styles.card}>
             <div className={styles.product}>
               <img src={item.img} alt={item.title} />
               <b>{item.title}</b>
