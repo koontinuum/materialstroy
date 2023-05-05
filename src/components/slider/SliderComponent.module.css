@@ -1,0 +1,62 @@
+.wrapper {
+  @apply w-full mx-auto bg-gray-200;
+  position: relative;
+}
+.wrapper .prevClick {
+  z-index: 1;
+  position: absolute;
+  top: 270px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.wrapper .prevClick img {
+  width: 40px;
+}
+.wrapper .nextClick {
+  z-index: 1;
+  position: absolute;
+  top: 270px;
+  right: 0px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.wrapper .nextClick img {
+  width: 40px;
+}
+
+.card {
+  @apply w-full mt-16 mb-16;
+}
+.card .product {
+  @apply relative w-full cursor-pointer;
+}
+.card .product b {
+  @apply absolute px-2 py-1 top-8 left-8 bg-green-600 opacity-80 text-[#2e2e2e] text-xl rounded-[2px];
+}
+.card .product img {
+  @apply w-full h-[420px] rounded-md;
+}
+
+.card:hover {
+  box-shadow: 0px 36px 30px 13px rgba(34, 60, 80, 0.2);
+  transition: 0.5s;
+}
+
+:global .slick-slide > div {
+  margin: 0 10px;
+}
+:global .slick-list {
+  margin: 0 -10px;
+}
+:global .slick-slide {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+:global .slick-dots {
+  @apply bg-gray-200;
+}/*# sourceMappingURL=SliderComponent.module.css.map */

@@ -1,15 +1,26 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import { persistReducer, persistStore } from 'redux-persist';
+import storage  from 'redux-persist/lib/storage';
+
 import search from './slices/SearchSLice'
 import reducer from './slices/CartSlice'
 
-//const reducers = combineReducers(
-//	reducer
-//)
+const persistConfig = {
+	key: 'root',
+	storage,
+}
+const rootReducer = combineReducers({
+	search,
+	reducer,
+});
 
-export const store = configureStore({
-	reducer: {
- 		search,
-       reducer,
-	},
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+const store = configureStore({
+	reducer: persistedReducer
 })
 
+
+
+export default store;
+export const persistor =persistStore(store);
