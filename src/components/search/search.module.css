@@ -1,0 +1,33 @@
+.searchEngine {
+  width: 430px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #eeeeee;
+  padding: 0 0px 0 20px;
+}
+.searchEngine input {
+  width: 60px;
+  font-family: "Montserrat";
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.searchEngine button {
+  background: #ddd;
+  width: 60px;
+  height: 100%;
+  padding-top: 4px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+.searchEngine button img {
+  width: 20px;
+  height: 20px;
+}
+.searchEngine .searchInp {
+  width: 100%;
+}/*# sourceMappingURL=search.module.css.map */
