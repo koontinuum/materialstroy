@@ -1,5 +1,7 @@
 .storeInfo {
-  @apply w-full py-24 flex justify-around items-center bg-no-repeat bg-cover max-sm:flex-col max-sm:gap-[32px];
+  @apply w-full py-24 flex justify-around items-center max-sm:flex-col max-sm:gap-[32px];
   background: url(./../../assets/storeBackground.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }

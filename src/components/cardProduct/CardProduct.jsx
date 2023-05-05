@@ -5,29 +5,29 @@ import { addToCart } from "../../redux/slices/CartSlice";
 
 const CardProduct = () => {
   const dispatch = useDispatch();
-const search = useSelector((state) => state.search.value);
-const cart = useSelector((state) => state.reducer);
-const [open, setOpen] = useState(false);
-const [selected, setSelected] = useState(null);
-const catagory = [
-  " алфавиту с начала",
-  " алфавиту с конца",
-  " цена возрастанию",
-  " цена убывания",
-];
-const onClickSort = (index) => {
-  setSelected(index);
-  index === 0
-    ? CardData.sort((x, y) => (x.title > y.title ? 1 : -1))
-    : index === 1
-    ? CardData.sort((x, y) => (y.title > x.title ? 1 : -1))
-    : index === 2
-    ? CardData.sort((x, y) => x.price - y.price)
-    : CardData.sort((x, y) => y.price - x.price);
-};
-const popup = () => {
-  setOpen(!open);
-};
+  const search = useSelector((state) => state.search.value);
+  const cart = useSelector((state) => state.reducer);
+  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState(null);
+  const catagory = [
+    " алфавиту с начала",
+    " алфавиту с конца",
+    " цена возрастанию",
+    " цена убывания",
+  ];
+  const onClickSort = (index) => {
+    setSelected(index);
+    index === 0
+      ? CardData.sort((x, y) => (x.title > y.title ? 1 : -1))
+      : index === 1
+      ? CardData.sort((x, y) => (y.title > x.title ? 1 : -1))
+      : index === 2
+      ? CardData.sort((x, y) => x.price - y.price)
+      : CardData.sort((x, y) => y.price - x.price);
+  };
+  const popup = () => {
+    setOpen(!open);
+  };
   return (
     <>
       <div className="bg-[#e5e7eb] pl-8 pt-5 cursor-pointer relative">
@@ -59,7 +59,7 @@ const popup = () => {
           return false;
         }).map((card) => (
           <div
-            className="w-5/6 sm:w-72 relative bg-white shadow-md sm:h-[500px] flex flex-col  "
+            className="w-[100%] sm:w-72 relative bg-white shadow-md sm:h-[500px] flex flex-col  "
             key={card.id}
           >
             <img
