@@ -14,7 +14,7 @@ function Header() {
         Качество и надежность <br /> это наша главная цель!
       </h1>
       <div className={styles.search_container}>
-        <Search/>
+        <Search />
       </div>
       <div className={styles.header_info}>
         <img src={delivery} alt="" />
